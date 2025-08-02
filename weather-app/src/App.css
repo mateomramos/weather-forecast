@@ -1,0 +1,36 @@
+
+body {
+  display:inline;
+
+  width: 100rem;
+  height: 100rem;
+
+}
+
+#root {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;;
+  background-color: lightblue;
+  padding: 2vw;
+  height: 100rem;
+}
+
+div.title {
+  background-color: grey;
+  width: 20rem;
+  height: 3.5rem;
+  border-radius: 20px;
+}
+
+h1.title {
+  font-size: 2rem;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+div.web-app {
+  background-color: grey;
+  margin: 10rem;
+}
