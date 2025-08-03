@@ -1,36 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&display=swap');
 
 body {
-  display:inline;
-
-  width: 100rem;
-  height: 100rem;
-
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  margin: 0;
 }
 
-#root {
+div#root {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;;
-  background-color: lightblue;
-  padding: 2vw;
-  height: 100rem;
+  background-color: rgb(70, 71, 71);
+
+  height: 100%;
+  overflow: hidden;
 }
 
 div.title {
-  background-color: grey;
+  background-color: rgb(227, 227, 227);
   width: 20rem;
   height: 3.5rem;
   border-radius: 20px;
+  margin: 1rem;
 }
 
 h1.title {
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
-  margin: auto;
-  margin-top: 0.5rem;
+  margin: 0.5rem;
 }
 
 div.web-app {
-  background-color: grey;
-  margin: 10rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 2.5rem;
+  padding: 1rem;
+  width: 50rem;
+  height: 100rem;
+  border-radius: 15px;
+}
+
+div.location-input {
+  align-self: flex-start;
+}
+
+div.weather-info {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 5;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+
+div.forecast-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+div.clock p {
+  font-family: 'Roboto', sans-serif;
+  margin: 0.25rem;
+  color: rgb(70, 71, 71)
 }

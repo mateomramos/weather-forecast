@@ -1,19 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
+import Weather from './weather'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <div className="title">
         <h1 className='title'>Weather App</h1>
       </div>
-      <div className="web-app">
-          
-      </div>
+      <Weather />
     </>
   )
 }
