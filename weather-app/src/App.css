@@ -60,10 +60,39 @@ div.forecast-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 5rem;
 }
 
 div.clock p {
   font-family: 'Roboto', sans-serif;
   margin: 0.25rem;
   color: rgb(70, 71, 71)
+}
+
+div.conditions {
+
+}
+
+div.add-conditions {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem
+}
+
+div.forecast {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 5;
+  gap: 1rem;
+}
+
+div.graph {
+  width: 40.5rem;
+  height: 10rem;
+  background-color: lightgray;
+}
+
+div.cards {
+  width: 40.5rem;
+  height: 10rem;
 }
