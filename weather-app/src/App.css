@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&display=swap');
 
+:root {
+  --mainFont: #000000;
+  --captionFont: #8e8e8e;
+}
+
+body * {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -38,8 +47,8 @@ div.web-app {
   background-color: white;
   margin: 2.5rem;
   padding: 1rem;
-  width: 50rem;
-  height: 100rem;
+  width: 60rem;
+  height: 110rem;
   border-radius: 15px;
 }
 
@@ -51,7 +60,7 @@ div.weather-info {
   display: flex;
   flex-direction: row;
   flex-grow: 5;
-  align-items: center;
+  align-items: stretch;
   margin-top: 1rem;
 }
 
@@ -61,16 +70,22 @@ div.forecast-info {
   flex-direction: column;
   justify-content: flex-start;
   gap: 5rem;
+  width: 12rem;
 }
 
 div.clock p {
   font-family: 'Roboto', sans-serif;
   margin: 0.25rem;
-  color: rgb(70, 71, 71)
+  color: var(--captionFont)
 }
 
 div.conditions {
 
+}
+
+sup {
+  font-size: 0.5em;
+  margin-bottom: 1em;
 }
 
 div.add-conditions {
@@ -84,15 +99,70 @@ div.forecast {
   flex-direction: column;
   flex-grow: 5;
   gap: 1rem;
+  padding: 0.5rem;
+  width: 18rem;
 }
 
 div.graph {
-  width: 40.5rem;
+  width: 47rem;
   height: 10rem;
   background-color: lightgray;
+  border-radius: 10px;
 }
 
-div.cards {
-  width: 40.5rem;
+div.tooltip {
+  background-color: rgba(0, 255, 255, 0.308);
+  border-radius: 20px;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+img.tooltip {
+  width: 3rem;
+  height: 3rem;
+}
+
+div.forecastCards {
   height: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+div.card {
+  width: 8rem;
+  height: 10rem;
+  border-color: #000000;
+  border-width: 10rem;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+}
+
+div.card:hover {
+  cursor: pointer;
+}
+
+div#activeCard {
+  background-color: rgba(0, 255, 255, 0.308);
+}
+
+h4#card {
+  margin-bottom:0em;
+}
+
+img#cardIcon{
+  width: 4em;
+  height: 4em;
+}
+
+p#cardCondition {
+  font-size: 0.9em;
+  margin-top: 0em;
+}
+
+p#cardTempRange {
+  font-family: 'Roboto', sans-serif;
+  color: var(--captionFont);
 }
